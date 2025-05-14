@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCheck } from "react-icons/fa6"; 
+import { FaCheck } from "react-icons/fa6";
 const Prices = () => {
   return (
     <>
@@ -23,10 +23,6 @@ const Prices = () => {
           </div>
 
           <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 animate-fadeInUp">
-
-
-
-
             <div
               data-slot="card"
               className="bg-[#1F2937] text-[#F9FAFB] gap-6 rounded-xl p-8 h-full flex flex-col transition-all duration-300 relative overflow-hidden border-2 border-[#3b82f6] shadow-lg -translate-y-2 scale-[1.02] z-10 hover:shadow-xl hover:-translate-y-3 hover:scale-[1.03] hover:z-20"
@@ -72,8 +68,7 @@ const Prices = () => {
                     className="flex items-center text-[#F9FAFB] text-sm py-2 px-3 rounded-md transition-all duration-200 hover:bg-[#374151]/80 hover:translate-x-1 -mx-3"
                   >
                     <div className="bg-[#3b82f6] text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0 shadow-sm transition-transform duration-200 hover:scale-110">
-                   
-                         <FaCheck />
+                      <FaCheck />
                     </div>
                     {item}
                   </li>
@@ -89,102 +84,107 @@ const Prices = () => {
               </button>
             </div>
 
+            <div
+              data-slot="card"
+              className="bg-[#1F2937] text-[#F9FAFB] gap-6 rounded-xl shadow-sm p-8 h-full flex flex-col transition-all duration-300 relative overflow-hidden border-2 border-transparent hover:border-[#3b82f6] hover:shadow-xl hover:-translate-y-3 hover:scale-[1.03] hover:z-20"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 bg-transparent group-hover:bg-gradient-to-r group-hover:from-[#3b82f6] group-hover:to-[#10B981]" />
+
+              <h3 className="text-xl font-bold text-foreground mb-2 relative inline-block">
+                Premium Services
+                <span className="absolute bottom-[-0.25rem] left-0 w-10 h-0.5 bg-[#3b82f6] rounded transition-all duration-300 group-hover:w-16" />
+              </h3>
+
+              <div className="flex items-baseline mb-6 group transition-all duration-300 hover:scale-105">
+                <span className="text-2xl font-semibold text-foreground mr-1">
+                  $
+                </span>
+                <span className="text-5xl font-extrabold bg-gradient-to-r from-[#3b82f6] to-[#10B981] bg-clip-text text-transparent">
+                  $35
+                </span>
+                <span className="text-sm text-[#71717b]  ml-1">/mo</span>
+              </div>
+
+              <ul className="space-y-3 mb-8 flex-grow">
+                {[
+                  "Haircut & Beard Combo",
+                  "Hot Towel Shave",
+                  "Full Beard Shaping & Design",
+                  "Color Camo (Gray Blending)",
+                  "Hair & Scalp Treatment",
+                  "Head Shave with Hot Towel",
+                ].map((service, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center text-foreground text-sm py-2 px-3 rounded-md transition-all duration-200 hover:bg-[#374151]/80 hover:translate-x-1 -mx-3"
+                  >
+                    <div className="bg-[#3b82f6] text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0 shadow-sm transition-transform duration-200 hover:scale-110">
+                      <FaCheck />
+                    </div>
+                    {service}
+                  </li>
+                ))}
+              </ul>
+
+              <button
+                data-slot="button"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50  shrink-0  border border-[#586479d6]  shadow-xs bg-[#374151] hover:text-accent-foreground  h-9 px-4  mt-auto w-full py-6 font-semibold relative overflow-hidden transition-all duration-300 hover:-translate-y-1"
+              >
+                Book Now
+              </button>
+            </div>
 
             <div
-  data-slot="card"
-  className="bg-[#1F2937] text-[#F9FAFB] gap-6 rounded-xl shadow-sm p-8 h-full flex flex-col transition-all duration-300 relative overflow-hidden border-2 border-transparent hover:border-[#3b82f6] hover:shadow-xl hover:-translate-y-3 hover:scale-[1.03] hover:z-20"
-  style={{ animationDelay: '0.1s' }}
->
-  <div className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 bg-transparent group-hover:bg-gradient-to-r group-hover:from-[#3b82f6] group-hover:to-[#10B981]" />
+              data-slot="card"
+              className="bg-[#1F2937] text-[#F9FAFB] gap-6 rounded-xl shadow-sm p-8 h-full flex flex-col transition-all duration-300 relative overflow-hidden border-2 border-transparent hover:border-[#3b82f6] hover:shadow-xl hover:-translate-y-3 hover:scale-[1.03] hover:z-20"
+              style={{ animationDelay: "0.1s" }}
+            >
+              <div className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 bg-transparent group-hover:bg-gradient-to-r group-hover:from-[#3b82f6] group-hover:to-[#10B981]" />
 
-  <h3 className="text-xl font-bold text-foreground mb-2 relative inline-block">
-    Premium Services
-    <span className="absolute bottom-[-0.25rem] left-0 w-10 h-0.5 bg-[#3b82f6] rounded transition-all duration-300 group-hover:w-16" />
-  </h3>
+              <h3 className="text-xl font-bold text-foreground mb-2 relative inline-block">
+                Packages
+                <span className="absolute bottom-[-0.25rem] left-0 w-10 h-0.5 bg-[#3b82f6] rounded transition-all duration-300 group-hover:w-16" />
+              </h3>
 
-  <div className="flex items-baseline mb-6 group transition-all duration-300 hover:scale-105">
-    <span className="text-2xl font-semibold text-foreground mr-1">$</span>
-    <span className="text-5xl font-extrabold bg-gradient-to-r from-[#3b82f6] to-[#10B981] bg-clip-text text-transparent">$35</span>
-    <span className="text-sm text-[#71717b]  ml-1">/mo</span>
-  </div>
+              <div className="flex items-baseline mb-6 group transition-all duration-300 hover:scale-105">
+                <span className="text-2xl font-semibold text-foreground mr-1">
+                  $
+                </span>
+                <span className="text-5xl font-extrabold bg-gradient-to-r from-[#3b82f6] to-[#10B981] bg-clip-text text-transparent">
+                  $50
+                </span>
+                <span className="text-sm text-[#71717b]  ml-1">/mo</span>
+              </div>
 
-  <ul className="space-y-3 mb-8 flex-grow">
-    {[
-      "Haircut & Beard Combo",
-      "Hot Towel Shave",
-      "Full Beard Shaping & Design",
-      "Color Camo (Gray Blending)",
-      "Hair & Scalp Treatment",
-      "Head Shave with Hot Towel",
-    ].map((service, index) => (
-      <li
-        key={index}
-        className="flex items-center text-foreground text-sm py-2 px-3 rounded-md transition-all duration-200 hover:bg-[#374151]/80 hover:translate-x-1 -mx-3"
-      >
-        <div className="bg-[#3b82f6] text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0 shadow-sm transition-transform duration-200 hover:scale-110">
-          <FaCheck />
-        </div>
-        {service}
-      </li>
-    ))}
-  </ul>
+              <ul className="space-y-3 mb-8 flex-grow">
+                {[
+                  "The Works (Cut, Shave, Treatment)",
+                  "Father & Son Combo",
+                  "Groom's Package",
+                  "Monthly Membership (2 cuts/mo)",
+                  "First-Time Client Special",
+                  "Loyalty Program",
+                ].map((service, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center text-foreground text-sm py-2 px-3 rounded-md transition-all duration-200 hover:bg-[#374151]/80 hover:translate-x-1 -mx-3"
+                  >
+                    <div className="bg-[#3b82f6] text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0 shadow-sm transition-transform duration-200 hover:scale-110">
+                      <FaCheck />
+                    </div>
+                    {service}
+                  </li>
+                ))}
+              </ul>
 
-  <button
-    data-slot="button"
-    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50  shrink-0  border border-[#586479d6]  shadow-xs bg-[#374151] hover:text-accent-foreground  h-9 px-4  mt-auto w-full py-6 font-semibold relative overflow-hidden transition-all duration-300 hover:-translate-y-1"
-  >
-    Book Now
-  </button>
-           </div>
-
- <div
-  data-slot="card"
-  className="bg-[#1F2937] text-[#F9FAFB] gap-6 rounded-xl shadow-sm p-8 h-full flex flex-col transition-all duration-300 relative overflow-hidden border-2 border-transparent hover:border-[#3b82f6] hover:shadow-xl hover:-translate-y-3 hover:scale-[1.03] hover:z-20"
-  style={{ animationDelay: '0.1s' }}
->
-  <div className="absolute top-0 left-0 right-0 h-1.5 transition-all duration-300 bg-transparent group-hover:bg-gradient-to-r group-hover:from-[#3b82f6] group-hover:to-[#10B981]" />
-
-  <h3 className="text-xl font-bold text-foreground mb-2 relative inline-block">
-    Packages
-    <span className="absolute bottom-[-0.25rem] left-0 w-10 h-0.5 bg-[#3b82f6] rounded transition-all duration-300 group-hover:w-16" />
-  </h3>
-
-  <div className="flex items-baseline mb-6 group transition-all duration-300 hover:scale-105">
-    <span className="text-2xl font-semibold text-foreground mr-1">$</span>
-    <span className="text-5xl font-extrabold bg-gradient-to-r from-[#3b82f6] to-[#10B981] bg-clip-text text-transparent">$50</span>
-    <span className="text-sm text-[#71717b]  ml-1">/mo</span>
-  </div>
-
-  <ul className="space-y-3 mb-8 flex-grow">
-    {[
-      "The Works (Cut, Shave, Treatment)",
-      "Father & Son Combo",
-      "Groom's Package",
-      "Monthly Membership (2 cuts/mo)",
-      "First-Time Client Special",
-      "Loyalty Program",
-
-    ].map((service, index) => (
-      <li
-        key={index}
-        className="flex items-center text-foreground text-sm py-2 px-3 rounded-md transition-all duration-200 hover:bg-[#374151]/80 hover:translate-x-1 -mx-3"
-      >
-        <div className="bg-[#3b82f6] text-white w-6 h-6 rounded-full flex items-center justify-center mr-3 flex-shrink-0 shadow-sm transition-transform duration-200 hover:scale-110">
-          <FaCheck />
-        </div>
-        {service}
-      </li>
-    ))}
-  </ul>
-
-  <button
-    data-slot="button"
-    className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50  shrink-0  border border-[#586479d6]  shadow-xs bg-[#374151] hover:text-accent-foreground  h-9 px-4  mt-auto w-full py-6 font-semibold relative overflow-hidden transition-all duration-300 hover:-translate-y-1"
-  >
-    Book Now
-  </button>
-           </div>
-
+              <button
+                data-slot="button"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm disabled:pointer-events-none disabled:opacity-50  shrink-0  border border-[#586479d6]  shadow-xs bg-[#374151] hover:text-accent-foreground  h-9 px-4  mt-auto w-full py-6 font-semibold relative overflow-hidden transition-all duration-300 hover:-translate-y-1"
+              >
+                Book Now
+              </button>
+            </div>
           </div>
         </div>
       </section>
