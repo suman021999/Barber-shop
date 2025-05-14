@@ -15,7 +15,7 @@ function Navbar() {
             <div>
               <img
                 className="h-14 w-14 rounded-full"
-                src="/public/logo.png"
+                src="/public/logo.svg"
                 alt="PMC Logo"
               />
             </div>
