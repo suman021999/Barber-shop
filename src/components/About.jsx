@@ -29,7 +29,7 @@ const About = () => {
 
             <div className="transition-all duration-700 animate-slideIn opacity-100 delay-100">
               <div className="relative rounded-2xl overflow-hidden shadow-xl transition-all duration-500 hover:translate-y-[-5px] hover:shadow-2xl group md:max-w-full max-w-[90%] mx-auto group">
-              <img className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" src="/public/about.webp" alt="" />
+              <img className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" src="/public/about.jpg" alt="" />
               <div className="absolute inset-0 border-2 border-transparent rounded-2xl z-[3] transition-all duration-500 group-hover:border-primary/20 opacity-0 group-hover:opacity-100"></div>
               <div className="absolute bottom-4 right-4 bg-[#3b82f6] text-white py-3 px-5 rounded-lg font-semibold text-lg shadow-lg z-[2] rotate-3 group-hover:translate-y-[-3px] group-hover:shadow-xl group-hover:rotate-0 transition-transform duration-500">5+ years</div>
               </div>

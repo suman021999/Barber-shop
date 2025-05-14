@@ -67,7 +67,7 @@ const Banner = () => {
           </div>
 
           <div className='relative flex items-center justify-center animate-floatIn filter drop-shadow-xl'>
-            <img className="w-full h-auto max-h-[600px] object-contain transition-transform hover:scale-105 duration-300" src="/public/hero.webp" loading="eager" alt="" />
+            <img className="w-full h-auto max-h-[600px] object-contain transition-transform hover:scale-105 duration-300" src="/public/hero.jpg" loading="eager" alt="" />
           <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-2/3 h-4 bg-black/10 rounded-full blur-md -z-10"></div>
           </div>
           </div>
