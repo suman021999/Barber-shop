@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { BsGlobe } from "react-icons/bs";
 import { HiOutlinePhone, HiMenu, HiX } from "react-icons/hi";
+import logo from "../../public/logo.svg"
 
 function Navbar() {
   const [toggle, setToggle] = useState(false);
@@ -15,7 +16,7 @@ function Navbar() {
             <div>
               <img
                 className="h-14 w-14 rounded-full"
-                src="/public/logo.svg"
+                src={logo}
                 alt="PMC Logo"
               />
             </div>
