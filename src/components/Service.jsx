@@ -1,7 +1,7 @@
 import React from "react";
-import hairStyling from "../public/hair-styling-icon.svg"
-import makeup from "../public/makeup-icon.svg"
-import skincare from "../public/skincare-icon.svg"
+import hairStyling from "../../public/hair-styling-icon.svg"
+import makeup from "../../public/makeup-icon.svg"
+import skincare from "../../public/skincare-icon.svg"
 
 const Service = () => {
   return (
