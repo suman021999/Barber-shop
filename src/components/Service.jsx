@@ -1,4 +1,7 @@
 import React from "react";
+import hairStyling from "../public/hair-styling-icon.svg"
+import makeup from "../public/makeup-icon.svg"
+import skincare from "../public/skincare-icon.svg"
 
 const Service = () => {
   return (
@@ -41,7 +44,7 @@ const Service = () => {
                       height="60"
                       decoding="async"
                       className="object-contain"
-                      src="/public/hair-styling-icon.svg"
+                      src={hairStyling}
                       style={{ color: "transparent" }}
                     />
                   </div>
@@ -84,7 +87,7 @@ const Service = () => {
                       height="60"
                       decoding="async"
                       className="object-contain"
-                      src="/public/makeup-icon.svg"
+                      src={makeup}
                       style={{ color: "transparent" }}
                     />
                   </div>
@@ -125,7 +128,7 @@ const Service = () => {
                       height="60"
                       decoding="async"
                       className="object-contain"
-                      src="/public/skincare-icon.svg"
+                      src={skincare}
                       style={{ color: "transparent" }}
                     />
                   </div>
